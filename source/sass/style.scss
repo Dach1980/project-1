@@ -1,3 +1,18 @@
+/* GLOBAL */
+@import "./common/root";
+@import "./common/variables";
+@import "./common/mixins";
+@import "./common/global";
+@import "./common/fonts";
+@import "./common/visually-hidden";
+
+// blocks
+@import "./blocks/page";
+@import "./blocks/main-header";
+@import "./blocks/logo";
+@import "./blocks/container";
+
+
 // Vendor
 // ---------------------------------
 
