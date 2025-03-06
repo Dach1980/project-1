@@ -1,0 +1,189 @@
+.button {
+  @include secondary-font(12px, 1);
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  background-color: inherit;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: $mobile-width-only) {
+  .button {
+    width: 100%;
+  }
+}
+
+.button--primary-light {
+  border: 2px solid var(--blocks-dark, #ff6347);
+  color: 2px solid var(--blocks-dark, #ff6347);
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  &:hover {
+    background-image: var(--tab-background, #ff6347);
+    color: var(--white, #ff6347);
+    border: 2px solid transparent;
+    border-image: var(--tab-background, #ff6347) 1;
+  }
+
+  &:focus {
+    background-color: var(--tab-focus, #ff6347);
+    color: var(--white, #ff6347);
+    border: 2px solid var(--black, #ff6347);
+  }
+
+  &:active {
+    background-image: var(--tab-background, #ff6347);
+    color: var(--white, #ff6347);
+    opacity: 0.7;
+    border: 2px solid transparent;
+    border-image: var(--tab-background, #ff6347) 1;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
+
+.button--primary-light-disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.button--primary-dark {
+  border: 2px solid var(--white, #ff6347);
+  color: var(--white, #ff6347);
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  &:hover {
+    background-color: var(--white, #ff6347);
+    color: var(--secondary-text-light, #ff6347);
+    border: 2px solid var(--white, #ff6347);
+  }
+
+  &:focus {
+    background-color: var(--bg-secondary-light, #ff6347);
+    color: var(--secondary-text-light, #ff6347);
+    outline: none;
+    border: 2px solid var(--black, #ff6347);
+  }
+
+  &:active {
+    background-color: var(--white, #ff6347);
+    color: var(--primary-text-light, #ff6347);
+    border: 2px solid var(--white, #ff6347);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.button--primary-dark-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.button--link-light {
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--bg-secondary, #ff6347);
+  border-bottom: 1px solid (--button-border-middle, #ff6347);
+  padding: 0;
+  padding-bottom: 5px;
+  width: fit-content;
+  position: relative;
+  outline: none;
+
+  &:hover {
+    opacity: 0.8;
+    color: var(--bg-secondary, #ff6347);
+    border-bottom: 1px solid var(--bg-secondary, #ff6347);
+  }
+
+  &:focus::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: calc(100% + 20px);
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--bg-secondary, #ff6347);
+    border: 1px solid var(--bg-secondary, #ff6347);
+  }
+
+  &:active {
+    border-bottom: 1px solid (--button-border-middle, #ff6347);
+  }
+}
+
+.button--link-light-disabled {
+  opacity: 0.3;
+  color: var(--bg-secondary, #ff6347);
+  border-bottom: 1px solid var(--bg-secondary, #ff6347);
+}
+
+.button--link-dark {
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--white, #ff6347);
+  border-bottom: 1px solid var(--white, #ff6347);
+  padding: 0;
+  padding-bottom: 4px;
+  width: max-content;
+  position: relative;
+
+  &:hover {
+    opacity: 0.8;
+    color: var(--white, #ff6347);
+    border-bottom: 1px solid var(--white, #ff6347);
+  }
+
+  &:focus {
+    outline: none;
+    color: var(--white, #ff6347);
+    border: 1px solid var(--white, #ff6347);
+  }
+
+  &:active {
+    border: none;
+  }
+
+  &:active::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white, #ff6347);
+    border: 1px solid var(--white, #ff6347);
+  }
+}
+
+.button--link-dark-disabled {
+  opacity: 0.3;
+  color: var(--white, #ff6347);
+  border-bottom: 1px solid var(--white, #ff6347);
+}
