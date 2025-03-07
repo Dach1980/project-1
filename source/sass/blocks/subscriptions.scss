@@ -1,0 +1,187 @@
+.subscriptions {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 40px;
+  }
+}
+
+
+.subscriptions__cart {
+  padding: 50px 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: var(--white, #ff6347);
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    border: 7px solid;
+    border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+    border-image-slice: 1;
+    padding: 43px 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 65px;
+    min-width: 380px;
+    gap: 0;
+    position: relative;
+    z-index: 1;
+
+    &:hover,
+    &:focus {
+      padding: 58px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 360px;
+    min-height: 447px;
+    gap: 17px;
+
+    &:hover,
+    &:focus {
+      min-height: 448px;
+    }
+  }
+}
+
+.subscriptions__name {
+  @include secondary-font(22px, 1);
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: var(--blocks-dark, #ff6347);
+
+  @media (min-width: $tablet-width) {
+    @include secondary-font(24px, 1);
+    padding-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include secondary-font(26px, 1);
+    padding-bottom: 0;
+  }
+}
+
+.subscriptions__time {
+  @include secondary-font(14px, 22px);
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  color: var(--blocks-dark, #ff6347);
+
+  @media (min-width: $tablet-width) {
+    @include secondary-font(16px, 24px);
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.subscriptions__prices {
+  position: relative;
+  pointer-events: none;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.subscriptions__price-value {
+  @include secondary-font(48px, 64px);
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: var(--text-dark, #ff6347);
+
+  @media (min-width: $tablet-width) {
+    @include secondary-font(60px, 150px);
+  }
+}
+
+.subscriptions__price-currency {
+  margin: 0;
+  padding: 0;
+
+  background-image: url("/__spritemap#sprite-rub-view");
+  background-size: 24px 33px;
+  width: 24px;
+  height: 33px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 42px;
+    background-size: 30px 42px;
+  }
+}
+
+.subscriptions__price-value--bg-shadow {
+  @include secondary-font(80px, 120px);
+  font-weight: 700;
+  color: var(--text-shadow, #ff6347);
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include secondary-font(100px, 150px);
+  }
+}
+
+.subscriptions__price {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+    bottom: -8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -30px;
+    gap: 14px;
+  }
+}
+
+.subscriptions__buy {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+
+  &:focus {
+    background: var(--tab-focus, #ff6347);
+    color: var(--white, #ff6347);
+    border: 2px solid var(--blocks-dark, #ff6347);
+  }
+
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
