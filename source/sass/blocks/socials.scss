@@ -1,0 +1,94 @@
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  max-width: 120px;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    min-width: 105px;
+    gap: 15px;
+    max-width: 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+    min-width: 95px;
+    max-width: 100px;
+  }
+}
+
+.socials__link {
+  border-radius: 50%;
+  background-color: var(--white, #ff6347);
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+
+  &:hover {
+    background-color: var(--button-border-middle, #ff6347);
+  }
+
+  &:hover::before {
+    background-color: var(--white, #ff6347);
+  }
+
+  &:focus {
+    outline: none;
+    background-color: var(--text-dark, #ff6347);
+  }
+
+  &:focus::before {
+    background-color: var(--white, #ff6347);
+  }
+
+  &:active {
+    outline: none;
+    background-color: var(--blocks-dark, #ff6347);
+  }
+
+  &:active::before {
+    background-color: var(--white, #ff6347);
+  }
+
+  &--disabled {
+    pointer-events: none;
+    background-color: var(--white, #ff6347);
+  }
+
+  &--disabled::before {
+    background-color: var(--button-disabled-dark, #ff6347);
+  }
+}
+
+.socials__link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: var(--button-disabled-dark, #ff6347);
+  width: 25px;
+  height: 25px;
+  mask-size: 15px 15px;
+}
+
+.socials__link--vk::before {
+  mask-image: url("/__spritemap#sprite-vk-view");
+  mask-size: 12px 13px;
+}
+
+.socials__link--ok::before {
+  mask-image: url("/__spritemap#sprite-ok-view");
+  mask-size: 17px 16px;
+}
+
+.socials__link--reddit::before {
+  mask-image: url("/__spritemap#sprite-reddit-view");
+  mask-size: 14px 14px;
+}
