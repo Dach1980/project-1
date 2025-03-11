@@ -95,7 +95,7 @@
 }
 
 .features__number {
-  @include secondary-font(48px, 64px);
+  @include secondary-font(64px, 1);
   font-weight: 700;
   color: inherit;
   display: block;
@@ -104,7 +104,7 @@
   -webkit-text-fill-color: transparent;
 
   @media (min-width: $tablet-width) {
-    @include secondary-font(60px, 150px);
+    @include secondary-font(70px, 1);
   }
 }
 
@@ -140,15 +140,15 @@
 }
 
 .features__text {
-  @include secondary-font(48px, 64px);
-  font-weight: 700;
+  @include secondary-font(14px, 22px);
+  font-weight: 300;
   color: inherit;
   margin: 0;
   padding: 0;
   max-width: 230px;
 
   @media (min-width: $tablet-width) {
-    @include secondary-font(60px, 150px);
+    @include secondary-font(16px, 24px);
     text-align: left;
     max-width: 234px;
   }
