@@ -1,0 +1,133 @@
+.contacts {
+  padding-top: 37px;
+  padding-bottom: 40px;
+  color: var(--blocks-dark, #ff6347);
+  background-color: var(--white, #ff6347);
+
+  @media (min-width: $tablet-width) {
+    max-width: 440px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59.6px 103px 60px;
+    min-width: 683px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: var(--button-border-middle, #ff6347);
+    width: calc(50% + 103px);
+    height: 1px;
+    right: 0;
+  }
+}
+
+.contacts__title {
+  @include primary-font(32px, 1);
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  color: var(--blocks-dark, #ff6347);
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    @include primary-font(54px, 1);
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-bottom: 36px;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "address phone"
+      "hours   email";
+    gap: 14px 60px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px 120px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: var(--button-border-middle, #ff6347);
+  }
+
+  .contacts__item--address {
+    grid-area: address;
+  }
+
+  .contacts__item--hours {
+    grid-area: hours;
+  }
+
+  .contacts__item--phone {
+    grid-area: phone;
+  }
+
+  .contacts__item--email {
+    grid-area: email;
+  }
+}
+
+.contacts__name {
+  @include secondary-font(20px, 1);
+  font-weight: 400;
+  color: var(--blocks-dark, #ff6347);
+  display: block;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    @include secondary-font(22px, 1);
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include secondary-font(24px, 1);
+    padding-bottom: 6px;
+  }
+}
+
+.contacts__text {
+  @include secondary-font(14px, 20px);
+  font-weight: 400;
+  color: var(--blocks-dark, #ff6347);
+  display: block;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    @include secondary-font(14px, 22px);
+  }
+}
