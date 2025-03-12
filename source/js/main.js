@@ -1,9 +1,14 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
 import initJuriSwiper from './modules/juri';
 import initReviewSwiper from './modules/reviews';
+import { initAccordion, initTabsSwitch } from './modules/faq';
+import initFormValidation from './modules/form';
+import initPriceTabs from './modules/price';
+import initVideoLoader from './modules/video-loader';
 
 initJuriSwiper();
 initReviewSwiper();
+initTabsSwitch();
+initAccordion();
+initFormValidation();
+initPriceTabs();
+initVideoLoader();
