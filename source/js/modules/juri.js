@@ -23,13 +23,13 @@ const SWIPER_CONFIG = {
       centeredSlides: true,
     },
     [TABLET_WIDTH]: {
-      speed: 600,
+      speed: 700,
       slidesPerView: 2,
       spaceBetween: 28,
       slidesPerGroup: 2,
     },
     [DESKTOP_WIDTH]: {
-      speed: 600,
+      speed: 700,
       slidesPerView: 4,
       spaceBetween: 28,
       slidesPerGroup: DESKTOP_SLIDES_PER_GROUP,
