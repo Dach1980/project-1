@@ -31,6 +31,7 @@
 
 .contacts__title {
   @include primary-font(32px, 1);
+
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -39,6 +40,7 @@
 
   @media (min-width: $tablet-width) {
     @include primary-font(54px, 1);
+
     text-align: center;
   }
 
@@ -102,6 +104,7 @@
 
 .contacts__name {
   @include secondary-font(20px, 1);
+
   font-weight: 400;
   color: var(--blocks-dark, #ff6347);
   display: block;
@@ -109,6 +112,7 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font(22px, 1);
+
     font-size: 24px;
     line-height: 24px;
     padding-bottom: 6px;
@@ -116,12 +120,14 @@
 
   @media (min-width: $desktop-width) {
     @include secondary-font(24px, 1);
+
     padding-bottom: 6px;
   }
 }
 
 .contacts__text {
   @include secondary-font(14px, 20px);
+
   font-weight: 400;
   color: var(--blocks-dark, #ff6347);
   display: block;

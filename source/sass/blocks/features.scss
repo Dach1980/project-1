@@ -38,6 +38,7 @@
 
 .features__title {
   @include primary-font(32px, 1);
+
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -47,11 +48,13 @@
 
   @media (min-width: $tablet-width) {
     @include primary-font(42px, 1);
+
     padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     @include primary-font(54px, 1);
+
     padding-bottom: 51px;
   }
 }
@@ -96,6 +99,7 @@
 
 .features__number {
   @include secondary-font(64px, 1);
+
   font-weight: 700;
   color: inherit;
   display: block;
@@ -110,6 +114,7 @@
 
 .features__subscription {
   @include secondary-font(14px, 20px);
+
   font-weight: 400;
   color: inherit;
   display: block;
@@ -121,6 +126,7 @@
 
 .features__name {
   @include secondary-font(18px, 20px);
+
   font-weight: 400;
   color: inherit;
   margin: 0;
@@ -129,6 +135,7 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font(20px, 1);
+
     text-align: left;
     max-width: 236px;
     padding-bottom: 0;
@@ -141,6 +148,7 @@
 
 .features__text {
   @include secondary-font(14px, 22px);
+
   font-weight: 300;
   color: inherit;
   margin: 0;
@@ -149,6 +157,7 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font(16px, 24px);
+
     text-align: left;
     max-width: 234px;
   }
@@ -208,6 +217,7 @@
 
   .features__name {
     @include secondary-font(22px, 1);
+
     font-weight: 700;
     text-align: center;
     color: var(--white, #ff6347);
@@ -215,12 +225,14 @@
 
     @media (min-width: $tablet-width) {
       @include secondary-font(24px, 1);
+
       text-align: center;
       padding-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
       @include secondary-font(26px, 1);
+
       padding-top: 11px;
       padding-bottom: 38px;
     }

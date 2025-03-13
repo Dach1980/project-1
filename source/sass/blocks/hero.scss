@@ -44,6 +44,7 @@
 
 .hero__subtitle {
   @include secondary-font(14px, 20px);
+
   font-weight: 400;
   grid-row: 1/3;
   margin: 0;
@@ -58,7 +59,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-  padding: 0;
+    padding: 0;
 
     grid-row: 1/4;
   }
@@ -71,6 +72,7 @@
 
 .hero__city {
   @include primary-font(32px, 1);
+
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -84,12 +86,13 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-  padding: 0;
+    padding: 0;
   }
 }
 
 .hero__title {
   @include primary-font(62px, 1);
+
   font-weight: 800;
   text-align: right;
   letter-spacing: 1px;

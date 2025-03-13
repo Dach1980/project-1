@@ -24,6 +24,7 @@
 
 .juri__title {
   @include primary-font(32px, 1);
+
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -33,6 +34,7 @@
 
   @media (min-width: $tablet-width) {
     @include primary-font(42px, 1);
+
     padding-bottom: 46px;
   }
 
@@ -76,7 +78,7 @@
   outline: none;
   transition: all 0.3s ease;
   cursor: pointer;
-  background-color: var(--bg-secondary, #ff6347);;
+  background-color: var(--bg-secondary, #ff6347);
 
   @media (max-width: $mobile-width-only) {
     margin-left: 29px;
@@ -93,6 +95,7 @@
 
 .juri__name {
   @include secondary-font(22px, 1);
+
   margin: 0;
   padding: 0;
   color: var(--white, #ff6347);
@@ -182,6 +185,7 @@
 
 .juri__proffesion {
   @include secondary-font(14px, 22px);
+
   font-weight: 300;
   padding-bottom: 33.7px;
   color: var(--text-budge, #ff6347);
@@ -197,6 +201,7 @@
 
 .juri__achievement {
   @include secondary-font(14px, 20px);
+
   font-weight: 400;
   color: var(--white, #ff6347);
   display: flex;

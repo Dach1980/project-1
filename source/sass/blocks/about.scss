@@ -22,6 +22,7 @@
 
 .about__title {
   @include primary-font(32px, 1);
+
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -30,11 +31,13 @@
 
   @media (min-width: $tablet-width) {
     @include primary-font(42px, 1);
+
     padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
     @include primary-font(54px, 1);
+
     text-align: left;
     padding-bottom: 26px;
   }
@@ -42,6 +45,7 @@
 
 .about__subtitle {
   @include secondary-font(18px, 20px);
+
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -51,17 +55,20 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font(20px, 1);
+
     padding-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
     @include secondary-font(22px, 1);
+
     padding-bottom: 95px;
   }
 }
 
 .about__text {
   @include secondary-font(14px, 22px);
+
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -69,6 +76,7 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font(16px, 24px);
+
     padding-left: 92px;
     padding-right: 92px;
   }

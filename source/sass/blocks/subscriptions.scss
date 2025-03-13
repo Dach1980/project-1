@@ -62,6 +62,7 @@
 
 .subscriptions__name {
   @include secondary-font(22px, 1);
+
   font-weight: 700;
   text-align: center;
   margin: 0;
@@ -70,17 +71,20 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font(24px, 1);
+
     padding-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
     @include secondary-font(26px, 1);
+
     padding-bottom: 0;
   }
 }
 
 .subscriptions__time {
   @include secondary-font(14px, 22px);
+
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -88,6 +92,7 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font(16px, 24px);
+
     padding-bottom: 20px;
   }
 
@@ -111,6 +116,7 @@
 
 .subscriptions__price-value {
   @include secondary-font(48px, 64px);
+
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -139,6 +145,7 @@
 
 .subscriptions__price-value--bg-shadow {
   @include secondary-font(80px, 120px);
+
   font-weight: 700;
   color: var(--text-shadow, #ff6347);
   position: relative;

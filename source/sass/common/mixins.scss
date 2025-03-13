@@ -8,13 +8,13 @@
   }
 }
 
-@mixin primary-font ($font-size, $line-height) {
+@mixin primary-font($font-size, $line-height) {
   font-family: $primary-font-family;
   font-size: $font-size;
   line-height: $line-height;
 }
 
-@mixin secondary-font ($font-size, $line-height) {
+@mixin secondary-font($font-size, $line-height) {
   font-family: $secondary-font-family;
   font-size: $font-size;
   line-height: $line-height;

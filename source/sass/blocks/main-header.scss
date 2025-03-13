@@ -25,6 +25,7 @@
 
 .main-header__telephone {
   @include secondary-font(22px, 1);
+
   font-weight: 700;
   text-align: center;
   display: block;
@@ -49,7 +50,7 @@
   }
 
   &--disabled {
-    color: var(-- primary-text-dark, #ff6347);
+    color: var(--primary-text-dark, #ff6347);
     opacity: 0.5;
   }
 }

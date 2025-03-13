@@ -47,6 +47,7 @@
 
 .addition-list__name {
   @include secondary-font(22px, 1);
+
   font-weight: 700;
   text-align: center;
   margin: 0;
@@ -55,6 +56,7 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font(24px, 1);
+
     text-align: left;
     padding-bottom: 10px;
     font-size: 26px;
@@ -81,6 +83,7 @@
 
 .addition-list__description {
   @include secondary-font(14px, 22px);
+
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -89,6 +92,7 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font(16px, 24px);
+
     text-align: left;
   }
 }
