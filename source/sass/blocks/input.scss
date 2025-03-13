@@ -1,0 +1,85 @@
+.input {
+  @media (min-width: $desktop-width) {
+    height: 26px;
+  }
+}
+
+.input__control {
+  @include secondary-font(14px, 22px);
+
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  color: var(--white, #ff6347);
+  outline: none;
+  min-width: 100px;
+  padding-bottom: 4px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--button-border-middle, #ff6347);
+  cursor: text;
+  width: 100%;
+
+  &:hover {
+    border-bottom: 1px solid var(--white, #ff6347);
+  }
+
+  &:focus {
+    border: 1px solid var(--white, #ff6347);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  &--invalid {
+    border-bottom: 1px solid var(--error-form-color, #ff6347);
+  }
+
+  @media (min-width: $tablet-width) {
+    color: var(--white, #ff6347);
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 2px;
+  }
+}
+
+.input__control::placeholder {
+  @include secondary-font(14px, 22px);
+
+  font-weight: 300;
+  color: inherit;
+  opacity: 0.4;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    color: var(--white, #ff6347);
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+  }
+}
+
+.input__error-message {
+  @include secondary-font(14px, 20px);
+
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: var(--error-form-color, #ff6347);
+  margin-top: 2px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include secondary-font(14px, 22px);
+  }
+}
+
+.input__error-message--visible {
+  display: block;
+}
