@@ -15,6 +15,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 100px;
     padding-bottom: 99px;
+    padding-right: 103px;
   }
 }
 
@@ -30,7 +31,7 @@
 @media (min-width: $desktop-width) {
   .features__grid {
     grid-template-columns: repeat(2, 360px);
-    gap: 81px 440px;
+    gap: 79px 441px;
     min-height: 300px;
     position: relative;
   }
@@ -333,7 +334,7 @@
     width: 360px;
     top: 50%;
     transform: translateY(-50%);
-    height: 1px;
+    height: 2px;
     background-color: rgba(209, 10, 66, 0.2);
     position: absolute;
   }
@@ -343,7 +344,7 @@
     width: 360px;
     top: 50%;
     transform: translateY(-50%);
-    height: 1px;
+    height: 2px;
     background-color: rgba(209, 10, 66, 0.2);
     position: absolute;
   }

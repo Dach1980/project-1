@@ -30,14 +30,14 @@
   grid-template-columns: 1fr 1fr;
   color: var(--white, #ff6347);
   text-align: right;
-  gap: 0 22px;
+  gap: 0 23px;
 
   @media (min-width: $tablet-width) {
     gap: 0 26px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 39px 0;
+    gap: 41px 0;
     align-items: center;
   }
 }
@@ -50,16 +50,17 @@
   margin: 0;
   padding: 0;
   color: var(--white, #ff6347);
-  margin-top: auto;
+  margin-top: 109px;
 
   @media (min-width: $tablet-width) {
+    margin-top: auto;
     margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin-top: 24px;
     padding: 0;
-
+    line-height: 22px;
     grid-row: 1/4;
   }
 }
@@ -80,10 +81,14 @@
   padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
+    @include primary-font(42px, 1);
+
     padding-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
+    @include primary-font(54px, 1);
+
     margin: 0;
     padding: 0;
   }
@@ -92,9 +97,10 @@
 .hero__title {
   @include primary-font(62px, 1);
 
+  font-weight: 800;
   text-transform: uppercase;
   text-align: right;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   margin: 0;
   padding: 0;
   color: var(--white, #ff6347);
@@ -108,7 +114,7 @@
   @media (min-width: $desktop-width) {
     @include primary-font(91px, 110px);
 
-    letter-spacing: 4px;
+    letter-spacing: 4.5px;
   }
 }
 

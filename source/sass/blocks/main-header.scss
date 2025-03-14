@@ -5,8 +5,8 @@
 }
 
 .main-header__container {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 17px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -18,8 +18,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 31px;
-    padding-bottom: 30px;
+    padding-top: 29px;
+    padding-bottom: 28px;
   }
 }
 
@@ -61,5 +61,7 @@
 
   @media (min-width: $desktop-width) {
     @include secondary-font(26px, 1);
+
+    margin-top: 3px;
   }
 }

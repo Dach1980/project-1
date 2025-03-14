@@ -43,7 +43,7 @@
   display: grid;
   grid-template-columns: 1fr 56px;
   position: relative;
-  gap: 16px 52px;
+  gap: 16px 53px;
   max-width: 290px;
 
   @media (min-width: $tablet-width) {
@@ -166,6 +166,8 @@
   max-width: 56px;
 
   @media (min-width: $desktop-width) {
+    @include secondary-font(40px, 1);
+
     max-width: 92px;
   }
 }

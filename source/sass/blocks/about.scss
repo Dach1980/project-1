@@ -3,7 +3,7 @@
 }
 
 .about__container {
-  padding-top: 40px;
+  padding-top: 41px;
   padding-bottom: 40px;
   color: var(--blocks-dark, #ff6347);
 
@@ -50,7 +50,7 @@
   margin: 0;
   padding: 0;
   color: var(--blocks-dark, #ff6347);
-  padding-bottom: 37px;
+  padding-bottom: 36px;
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -143,7 +143,7 @@
   position: absolute;
   width: 320px;
   height: 280px;
-  bottom: 246px;
+  bottom: 245px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -199,7 +199,7 @@
   height: 72px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-48%, -50%);
   background-color: inherit;
   border: none;
   cursor: pointer;
