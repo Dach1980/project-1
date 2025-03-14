@@ -1,10 +1,9 @@
-@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+@mixin font-face($font-family, $font-weight, $font-style, $src-woff-2, $src-woff) {
   @font-face {
     font-family: $font-family;
-    font-weight: $font-weight;
     font-style: $font-style;
     font-display: swap;
-    src: $font-src;
+    src: $src-woff-2, $src-woff;
   }
 }
 
@@ -14,8 +13,17 @@
   line-height: $line-height;
 }
 
+// @mixin primary-extrabold($font-size, $line-height) {
+//   font-family: $primary-extrabold-family;
+//   font-size: $font-size;
+//   line-height: $line-height;
+//   font-weight: 800;
+// }
+
 @mixin secondary-font($font-size, $line-height) {
   font-family: $secondary-font-family;
   font-size: $font-size;
   line-height: $line-height;
 }
+
+

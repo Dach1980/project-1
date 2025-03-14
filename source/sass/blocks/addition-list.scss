@@ -4,11 +4,12 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 33px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {

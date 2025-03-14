@@ -32,7 +32,7 @@
 }
 
 .faq__container {
-  padding-top: 70px;
+  padding-top: 72px;
   padding-bottom: 70px;
 
   @media (min-width: $tablet-width) {
@@ -81,7 +81,7 @@
   display: grid;
   grid-template-columns: repeat(2, 140px);
   gap: 10px;
-  padding-bottom: 35px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, 162px);
@@ -206,7 +206,7 @@
   font-weight: 400;
   margin: 0;
   padding: 0;
-  color: var(--button-border-middle, #ff6347);
+  color: var(--blocks-dark, #ff6347);
 
   @media (min-width: $tablet-width) {
     @include secondary-font(22px, 1);
@@ -223,7 +223,7 @@
   font-weight: 300;
   margin: 0;
   padding: 0;
-  color: var(--button-border-middle, #ff6347);
+  color: var(--blocks-dark, #ff6347);
   padding-top: 20px;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
   overflow: hidden;
@@ -250,7 +250,7 @@
 .faq__tab-button {
   @include secondary-font(16px, 1);
 
-  color: var(--button-border-middle, #ff6347);
+  color: var(--blocks-dark, #ff6347);
   border: 1px solid var(--tab-border, #ff6347);
   padding: 14px 22px;
   font-weight: 400;

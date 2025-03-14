@@ -28,6 +28,7 @@
 
   font-weight: 700;
   text-align: center;
+  // letter-spacing: 1.1px;
   display: block;
   margin: 0;
   padding: 0;
@@ -52,5 +53,13 @@
   &--disabled {
     color: var(--primary-text-dark, #ff6347);
     opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include secondary-font(24px, 1);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include secondary-font(26px, 1);
   }
 }

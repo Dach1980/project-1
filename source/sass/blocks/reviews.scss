@@ -108,7 +108,7 @@
   margin: 0;
   padding: 0;
   color: var(--white, #ff6347);
-  padding-bottom: 16px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     @include secondary-font(20px, 1);

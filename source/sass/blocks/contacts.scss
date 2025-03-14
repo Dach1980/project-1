@@ -36,12 +36,13 @@
   margin: 0;
   padding: 0;
   color: var(--blocks-dark, #ff6347);
-  padding-bottom: 36px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     @include primary-font(54px, 1);
 
     text-align: center;
+    padding-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {

@@ -30,7 +30,7 @@
   grid-template-columns: 1fr 1fr;
   color: var(--white, #ff6347);
   text-align: right;
-  gap: 0 21px;
+  gap: 0 22px;
 
   @media (min-width: $tablet-width) {
     gap: 0 26px;
@@ -50,7 +50,6 @@
   margin: 0;
   padding: 0;
   color: var(--white, #ff6347);
-
   margin-top: auto;
 
   @media (min-width: $tablet-width) {
@@ -93,12 +92,24 @@
 .hero__title {
   @include primary-font(62px, 1);
 
-  font-weight: 800;
+  text-transform: uppercase;
   text-align: right;
   letter-spacing: 1px;
   margin: 0;
   padding: 0;
   color: var(--white, #ff6347);
+
+  @media (min-width: $tablet-width) {
+    @include primary-font(72px, 85px);
+
+    letter-spacing: 1.8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include primary-font(91px, 110px);
+
+    letter-spacing: 4px;
+  }
 }
 
 .hero__buy {
