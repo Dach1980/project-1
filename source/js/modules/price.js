@@ -1,8 +1,4 @@
-const VARIATIONS = {
-  '1 месяц': [5000, 1700, 2700],
-  '6 месяцев': [30000, 10200, 16200],
-  '12 месяцев': [60000, 20400, 32400],
-};
+import { PRICES_FOR_PERIOD } from './constants';
 
 const tabs = document.querySelectorAll('.price__tab');
 const filters = document.querySelectorAll('.price__filter');
@@ -10,7 +6,7 @@ const prices = document.querySelectorAll('.subscriptions__prices');
 
 const tabHandler = (event) => {
   const currentTab = event.currentTarget;
-  const currentVariation = VARIATIONS[currentTab.textContent];
+  const currentVariation = PRICES_FOR_PERIOD[currentTab.textContent];
 
   prices.forEach((price, index) => {
     const pricesElements = price.querySelectorAll(

@@ -1,14 +1,9 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
-
-const DESKTOP_WIDTH = 1366;
-const TABLET_WIDTH = 768;
-const MOBILE_SLIDES_PER_GROUP = 1;
-const DESKTOP_SLIDES_PER_GROUP = 4;
-const TABLET_SLIDES_PER_GROUP = 2;
+import { MOBILE_WIDTH, TABLET_WIDTH, MOBILE_SLIDES_SPACE_BETWEEN, DESKTOP_WIDTH, MOBILE_SLIDES_PER_GROUP, TABLET_SLIDES_SPEED, TABLET_SLIDES_PER_VIEW, TABLET_SLIDES_SPACE_BETWEEN, TABLET_SLIDES_PER_GROUP, DESKTOP_SLIDES_PER_VIEW, DESKTOP_SLIDES_PER_GROUP, COMMON_SLIDES_SPEED } from './constants';
 
 const SWIPER_CONFIG = {
-  speed: 400,
+  speed: COMMON_SLIDES_SPEED,
   loop: true,
   modules: [Navigation],
   navigation: {
@@ -17,21 +12,21 @@ const SWIPER_CONFIG = {
   },
 
   breakpoints: {
-    320: {
+    [MOBILE_WIDTH]: {
       slidesPerView: MOBILE_SLIDES_PER_GROUP,
-      spaceBetween: 290,
+      spaceBetween: MOBILE_SLIDES_SPACE_BETWEEN,
       centeredSlides: true,
     },
     [TABLET_WIDTH]: {
-      speed: 700,
-      slidesPerView: 2,
-      spaceBetween: 28,
-      slidesPerGroup: 2,
+      speed: TABLET_SLIDES_SPEED,
+      slidesPerView: TABLET_SLIDES_PER_VIEW,
+      spaceBetween: TABLET_SLIDES_SPACE_BETWEEN,
+      slidesPerGroup: TABLET_SLIDES_PER_GROUP,
     },
     [DESKTOP_WIDTH]: {
-      speed: 700,
-      slidesPerView: 4,
-      spaceBetween: 28,
+      speed: TABLET_SLIDES_SPEED,
+      slidesPerView: DESKTOP_SLIDES_PER_VIEW,
+      spaceBetween: TABLET_SLIDES_SPACE_BETWEEN,
       slidesPerGroup: DESKTOP_SLIDES_PER_GROUP,
       simulateTouch: false,
     },

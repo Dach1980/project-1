@@ -1,8 +1,7 @@
-const VIDEO_LINK =
-  'https://www.youtube.com/embed/9TZXsZItgdw?si=USUF2s1-47GvuEu-';
+import { VIDEO_LINK } from './constants';
 
 const IFRAME_ATTRIBUTES = {
-  title: 'YouTube video player',
+  title: 'Video player',
   frameBorder: '0',
   allow:
     'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',
@@ -24,7 +23,6 @@ const initVideoLoader = () => {
 
     Object.assign(videoIframe, IFRAME_ATTRIBUTES);
     videoIframe.classList.add('about__video-iframe');
-
     videoPreview.replaceWith(videoIframe);
     playButton.remove();
   });

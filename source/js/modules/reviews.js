@@ -1,9 +1,10 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
+import { MOBILE_WIDTH, TABLET_WIDTH, DESKTOP_WIDTH, COMMON_SLIDES_SPEED, REVIEWS_MOBILE_SPACE_BETWEEN, REVIEWS_MOBILE_WIDTH, REVIEWS_TABLET_SPACE_BETWEEN, REVIEWS_TABLET_WIDTH, REVIEWS_DESKTOP_SPACE_BETWEEN, REVIEWS_DESKTOP_WIDTH } from './constants';
 
 const SWIPER_CONFIG = {
-  speed: 400,
-  spaceBetween: 100,
+  speed: COMMON_SLIDES_SPEED,
+  spaceBetween: REVIEWS_MOBILE_SPACE_BETWEEN,
   modules: [Navigation],
   navigation: {
     nextEl: '.swiper-button-next',
@@ -13,17 +14,17 @@ const SWIPER_CONFIG = {
   centeredSlides: true,
   slidesPerView: 'auto',
   breakpoints: {
-    320: {
-      spaceBetween: 100,
-      with: 240,
+    [MOBILE_WIDTH]: {
+      spaceBetween: REVIEWS_MOBILE_SPACE_BETWEEN,
+      width: REVIEWS_MOBILE_WIDTH,
     },
-    768: {
-      spaceBetween: 700,
-      width: 500,
+    [TABLET_WIDTH]: {
+      spaceBetween: REVIEWS_TABLET_SPACE_BETWEEN,
+      width: REVIEWS_TABLET_WIDTH,
     },
-    1366: {
-      spaceBetween: 800,
-      width: 560,
+    [DESKTOP_WIDTH]: {
+      spaceBetween: REVIEWS_DESKTOP_SPACE_BETWEEN,
+      width: REVIEWS_DESKTOP_WIDTH,
       simulateTouch: false,
     },
   },
