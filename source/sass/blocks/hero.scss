@@ -13,7 +13,7 @@
     padding-top: 0;
     padding-bottom: 100px;
     align-items: center;
-    gap: 30px;
+    gap: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +33,7 @@
   gap: 0 22px;
 
   @media (min-width: $tablet-width) {
-    gap: 0 26px;
+    gap: 0 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,8 +53,8 @@
   margin-top: 109px;
 
   @media (min-width: $tablet-width) {
-    margin-top: auto;
-    margin-bottom: 23px;
+    margin-top: 131px;
+    line-height: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,7 +81,7 @@
   @media (min-width: $tablet-width) {
     @include primary-font(42px, 1);
 
-    padding-bottom: 9px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,7 +107,7 @@
   @media (min-width: $tablet-width) {
     @include primary-font(72px, 85px);
 
-    letter-spacing: 1.8px;
+    letter-spacing: 2.0px;
     padding: 0;
   }
 
