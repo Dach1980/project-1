@@ -30,7 +30,7 @@
   grid-template-columns: 1fr 1fr;
   color: var(--white, #ff6347);
   text-align: right;
-  gap: 0 23px;
+  gap: 0 22px;
 
   @media (min-width: $tablet-width) {
     gap: 0 26px;
@@ -78,8 +78,6 @@
   padding: 0;
   color: var(--white, #ff6347);
 
-  padding-bottom: 14px;
-
   @media (min-width: $tablet-width) {
     @include primary-font(42px, 1);
 
@@ -104,11 +102,13 @@
   margin: 0;
   padding: 0;
   color: var(--white, #ff6347);
+  padding-top: 14px;
 
   @media (min-width: $tablet-width) {
     @include primary-font(72px, 85px);
 
     letter-spacing: 1.8px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
