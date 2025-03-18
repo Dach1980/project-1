@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-top: 60px;
+    padding-top: 61px;
     padding-bottom: 60px;
     align-items: flex-start;
   }
@@ -38,7 +38,7 @@
 }
 
 .games__text {
-  padding: 40px;
+  padding: 40px 39px 39px 40px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 56px;
@@ -50,6 +50,7 @@
     grid-template-columns: 1fr 100px;
     gap: 10px 20px;
     max-width: 300px;
+    // padding-top: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,7 +84,7 @@
   gap: 5px;
 
   @media (min-width: $tablet-width) {
-    gap: 9px;
+    gap: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,7 +99,7 @@
   gap: 2px;
 
   @media (min-width: $tablet-width) {
-    gap: 3px;
+    gap: 3.7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -242,7 +243,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-top: -1px;
+    // margin-top: -1px;
   }
 
   @media (min-width: $desktop-width) {
