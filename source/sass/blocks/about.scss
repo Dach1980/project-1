@@ -201,7 +201,9 @@
   left: 50%;
   transform: translate(-48%, -50%);
   background-color: inherit;
-  border: none;
+  // border: none;
+  border: 2px solid var(--button-circle, #ff6347);
+  border-radius: 50%;
   cursor: pointer;
 }
 
