@@ -13,13 +13,6 @@
   line-height: $line-height;
 }
 
-// @mixin primary-extrabold($font-size, $line-height) {
-//   font-family: $primary-extrabold-family;
-//   font-size: $font-size;
-//   line-height: $line-height;
-//   font-weight: 800;
-// }
-
 @mixin secondary-font($font-size, $line-height) {
   font-family: $secondary-font-family;
   font-size: $font-size;

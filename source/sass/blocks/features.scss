@@ -13,8 +13,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 100px;
+    padding-top: 101px;
     padding-bottom: 99px;
+    padding-left: 103px;
     padding-right: 103px;
   }
 }
@@ -31,7 +32,7 @@
 @media (min-width: $desktop-width) {
   .features__grid {
     grid-template-columns: repeat(2, 360px);
-    gap: 79px 441px;
+    gap: 80px 440px;
     min-height: 300px;
     position: relative;
   }
@@ -56,6 +57,7 @@
   @media (min-width: $desktop-width) {
     @include primary-font(54px, 1);
 
+    padding-right: 2px;
     padding-bottom: 51px;
   }
 }
@@ -94,7 +96,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0 44px;
+    gap: 0 43px;
   }
 }
 
@@ -111,6 +113,10 @@
   @media (min-width: $tablet-width) {
     @include secondary-font(70px, 1);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -1px;
+  }
 }
 
 .features__subscription {
@@ -122,6 +128,10 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font(14px, 22px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 1px;
   }
 }
 
@@ -234,7 +244,7 @@
     @media (min-width: $desktop-width) {
       @include secondary-font(26px, 1);
 
-      padding-top: 11px;
+      padding-top: 9px;
       padding-bottom: 38px;
     }
   }
@@ -317,7 +327,7 @@
     gap: 0 79px;
 
     .features__text {
-      margin-top: 8px;
+      margin-top: 7px;
     }
   }
 
@@ -325,7 +335,7 @@
     gap: 0 81px;
 
     .features__text {
-      margin-top: 8px;
+      margin-top: 7px;
     }
   }
 
