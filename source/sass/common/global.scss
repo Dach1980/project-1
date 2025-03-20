@@ -13,7 +13,4 @@ body {
   @include primary-font (18px, 27px); // $font-size, $line-height
 
   margin: 0;
-
-  // color: var(--gray-darken, #ff6347);
-  // background-color: var(--white, #ff6347);
 }

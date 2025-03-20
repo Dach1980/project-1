@@ -41,8 +41,7 @@
 
   &:active {
     background-image: var(--tab-background, #ff6347);
-    color: var(--white, #ff6347);
-    opacity: 0.7;
+    color: var(--button-active-light, #ff6347);
     border: 2px solid transparent;
     border-image: var(--tab-background, #ff6347) 1;
   }
@@ -66,20 +65,20 @@
 
   &:hover {
     background-color: var(--white, #ff6347);
-    color: var(--secondary-text-light, #ff6347);
+    color: var(--text-dark, #ff6347);
     border: 2px solid var(--white, #ff6347);
   }
 
   &:focus {
     background-color: var(--bg-secondary-light, #ff6347);
-    color: var(--secondary-text-light, #ff6347);
+    color: var(--text-dark, #ff6347);
     outline: none;
     border: 2px solid var(--black, #ff6347);
   }
 
   &:active {
     background-color: var(--white, #ff6347);
-    color: var(--primary-text-light, #ff6347);
+    color: var(--blocks-dark, #ff6347);
     border: 2px solid var(--white, #ff6347);
   }
 
@@ -160,22 +159,22 @@
     border-bottom: 1px solid var(--white, #ff6347);
   }
 
-  &:focus {
+  &:active {
     outline: none;
     color: var(--white, #ff6347);
-    border: 1px solid var(--white, #ff6347);
+    border-bottom: 1px solid var(--white, #ff6347);
   }
 
-  &:active {
+  &:focus {
     border: none;
   }
 
-  &:active::before {
+  &:focus::before {
     content: "";
     position: absolute;
-    width: calc(100% + 8px);
-    height: calc(100% + 8px);
-    top: 30%;
+    width: calc(100% + 35px);
+    height: calc(100% + 20px);
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--white, #ff6347);

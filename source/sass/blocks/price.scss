@@ -116,8 +116,15 @@
     border-bottom: 2px solid var(--tab-border-hover, #ff6347);
   }
 
+  &:focus {
+    outline: none;
+    color: var(--blocks-dark, #ff6347);
+    border-bottom: 2px solid var(--blocks-dark, #ff6347);
+  }
+
   &:focus-within {
     outline: none;
+    color: var(--blocks-dark, #ff6347);
     border-bottom: 2px solid var(--blocks-dark, #ff6347);
   }
 
@@ -129,7 +136,7 @@
 
 .price__filter--current {
   color: var(--blocks-dark, #ff6347);
-  border-bottom: 2px solid var(--tab-border-primary, #ff6347);
+  border-bottom: 2px solid var(--banner-background, #ff6347);
 }
 
 .price__tab {

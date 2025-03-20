@@ -26,7 +26,7 @@ const tabHandler = (event) => {
   currentTab.closest('.price__filter').classList.add('price__filter--current');
 };
 
-const initPriceTabs = () => {
+const priceChanger = () => {
   tabs.forEach((tab) => {
     tab.addEventListener('click', tabHandler);
   });
@@ -36,4 +36,4 @@ const initPriceTabs = () => {
   tabHandler({ currentTarget: defaultTab });
 };
 
-export default initPriceTabs;
+export default priceChanger;

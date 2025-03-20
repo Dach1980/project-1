@@ -29,6 +29,7 @@
 
   &:hover,
   &:focus {
+    box-sizing: border-box;
     border: 7px solid;
     border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
     border-image-slice: 1;
@@ -50,12 +51,12 @@
 
   @media (min-width: $desktop-width) {
     min-width: 360px;
-    min-height: 447px;
+    max-height: 447px;
     gap: 17px;
 
     &:hover,
     &:focus {
-      min-height: 448px;
+      max-height: 448px;
     }
   }
 }
