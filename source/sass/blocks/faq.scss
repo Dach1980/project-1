@@ -251,7 +251,7 @@
   @include secondary-font(16px, 1);
 
   color: var(--blocks-dark, #ff6347);
-  border: 1px solid var(--tab-border, #ff6347);
+  border: 1px solid var(--blocks-dark, #ff6347);
   padding: 14px 22px;
   font-weight: 400;
   text-transform: none;
@@ -285,6 +285,7 @@
   background-image: var(--tab-background, #ff6347);
   color: var(--white, #ff6347);
   padding: 14px 23px;
+  border: none;
 
   @media (min-width: $tablet-width) {
     padding: 17px 28px;

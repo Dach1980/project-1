@@ -120,12 +120,16 @@
     border-bottom: 1px solid var(--bg-secondary, #ff6347);
   }
 
+  &:focus {
+    border: none;
+  }
+
   &:focus::before {
     content: "";
     position: absolute;
-    width: calc(100% + 8px);
+    width: calc(100% + 35px);
     height: calc(100% + 20px);
-    top: 30%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--bg-secondary, #ff6347);
