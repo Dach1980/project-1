@@ -195,6 +195,10 @@
   background-color: var(--white, #ff6347);
 }
 
+.faq__control:focus::before {
+  background-color: var(--white, #ff6347);
+}
+
 .faq__control--open::before {
   mask-image: url("/__spritemap#sprite-minus-view");
   background-color: var(--white, #ff6347);
@@ -251,7 +255,7 @@
   @include secondary-font(16px, 1);
 
   color: var(--blocks-dark, #ff6347);
-  border: 1px solid var(--blocks-dark, #ff6347);
+  border: 1px solid var(--tab-border, #ff6347);
   padding: 14px 22px;
   font-weight: 400;
   text-transform: none;

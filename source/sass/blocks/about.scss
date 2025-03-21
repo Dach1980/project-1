@@ -271,19 +271,22 @@
   background-image: none;
 }
 
-.about__play-icon:hover {
-  border: 2px solid var(--tab-border, #ff6347);
-}
+.about__play:hover {
+  outline: none;
 
-.about__play-icon:hover::before {
-  background-image: none;
-  background-color: var(--white, #ff6347);
-}
+  .about__play-icon {
+    border: 2px solid var(--button-video-hover, #ff6347);
+  }
 
-.about__play-icon:hover::after {
-  background-color: var(--tab-border, #ff6347);
-}
+  .about__play-icon::before {
+    background-image: none;
+    background-color: var(--bg-middle, #ff6347);
+  }
 
+  .about__play-icon::after {
+    background-color: var(--button-video-hover, #ff6347);
+  }
+}
 
 .about__play:focus::before {
   background-image: none;
@@ -291,6 +294,10 @@
 
 .about__play:focus {
   outline: none;
+
+  &:before {
+    background-color: var(--bg-middle, #ff6347);
+  }
 
   .about__play-icon {
     border: 2px solid var(--blocks-dark, #ff6347);

@@ -33,6 +33,7 @@
   --button-active-light: rgba(255, 255, 255, 0.7);
   --button-disabled-light: rgba(16, 38, 84, 0.3);
   --button-circle: rgba(237, 2, 51, 0.2);
+  --button-video-hover: rgba(16, 38, 84, 0.6);
 
   // shadows
   --blocks-shadow: rgba(28, 51, 116, 0.2);
@@ -40,7 +41,6 @@
 
   // tabs
   --tab-border: rgba(16, 38, 84, 0.2);
-  // --tab-background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   --tab-background: linear-gradient(151deg, #ed0233 17.6%, #003eb7 100%);
   --tab-focus:
     linear-gradient(97.05deg,

@@ -38,21 +38,21 @@
   outline: none;
 
   &:hover {
-    color: var(--text-button-secondary, #ff6347);
+    color: var(--bg-secondary, #ff6347);
     opacity: 0.5;
   }
 
   &:focus {
-    color: var(--text-button-secondary, #ff6347);
+    color: var(--bg-secondary, #ff6347);
   }
 
   &:active {
-    color: var(--text-button-secondary, #ff6347);
-    border-bottom: 1px solid var(--text-button-secondary, #ff6347);
+    color: var(--blocks-dark, #ff6347);
+    border-bottom: 1px solid var(--blocks-dark, #ff6347);
   }
 
   &--disabled {
-    color: var(--primary-text-dark, #ff6347);
+    color: var(--secondary-background, #ff6347);
     opacity: 0.5;
   }
 
