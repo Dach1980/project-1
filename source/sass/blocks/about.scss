@@ -295,7 +295,7 @@
 .about__play:focus {
   outline: none;
 
-  &:before {
+  &::before {
     background-color: var(--bg-middle, #ff6347);
   }
 
