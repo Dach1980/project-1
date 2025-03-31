@@ -80,7 +80,8 @@
 
 .socials__link--vk::before {
   mask-image: url("/__spritemap#sprite-vk-view");
-  mask-size: 12px 13px;
+  mask-size: 13px 13px;
+  transform: translate(-52%, -48%);
 }
 
 .socials__link--ok::before {
